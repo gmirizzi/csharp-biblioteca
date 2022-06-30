@@ -10,8 +10,8 @@ namespace csharp_biblioteca
     {
         public int dal;
         public int al;
-        internal Documento doc;
-        internal Utente user;
+        public Documento doc;
+        public Utente user;
 
         public Prestito(int dal, int al, Documento doc)
         {
