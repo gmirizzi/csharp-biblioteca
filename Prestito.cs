@@ -13,12 +13,11 @@ namespace csharp_biblioteca
         internal Documento doc;
         internal Utente user;
 
-        public Prestito(int dal, int al, Documento doc, Utente user)
+        public Prestito(int dal, int al, Documento doc)
         {
             this.dal = dal;
             this.al = al;
             this.doc = doc;
-            this.user = user;
         }
     }
 }
