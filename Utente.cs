@@ -20,7 +20,7 @@ namespace csharp_biblioteca
             this.password = password;
         }
 
-        public void EffettuaPrestito (int inizio, int fine, Documento doc, Biblioteca biblioteca)
+        public void EffettuaPrestito (DateTime inizio, DateTime fine, Documento doc, Biblioteca biblioteca)
         {
             Prestito newLoan = new Prestito(inizio, fine, doc);
             biblioteca.loanList.Add(newLoan);

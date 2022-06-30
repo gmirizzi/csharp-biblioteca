@@ -8,12 +8,12 @@ namespace csharp_biblioteca
 {
     internal class Prestito
     {
-        public int dal;
-        public int al;
+        public DateTime dal;
+        public DateTime al;
         public Documento doc;
         public Utente user;
 
-        public Prestito(int dal, int al, Documento doc)
+        public Prestito(DateTime dal, DateTime al, Documento doc)
         {
             this.dal = dal;
             this.al = al;

@@ -19,7 +19,7 @@ namespace csharp_biblioteca
             {
                 if (name == prestito.user.name && surname == prestito.user.surname)
                 {
-                    prestitiCercati.Add(prestito)
+                    prestitiCercati.Add(prestito);
                 }
             }
             return prestitiCercati;
