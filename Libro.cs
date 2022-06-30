@@ -8,5 +8,6 @@ namespace csharp_biblioteca
 {
     internal class Libro
     {
+        public int Pagine { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace csharp_biblioteca
         public string surname;
         public string name;
         public string email;
-        public string password;
+        private string password;
         public int number;
 
         public Utente(string email, string password)
@@ -19,5 +19,7 @@ namespace csharp_biblioteca
             this.email = email;
             this.password = password;
         }
+
+        
     }
 }
