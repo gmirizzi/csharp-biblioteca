@@ -8,7 +8,7 @@ namespace csharp_biblioteca
 {
     internal class Documento
     {
-        protected string id;
+        public string id;
         public string title;
         protected int year;
         protected string settore;

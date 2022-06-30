@@ -28,18 +28,28 @@ namespace csharp_biblioteca
 
         public Documento CercaPerTitolo (string titolo, Biblioteca biblioteca)
         {
+            Documento documentoDaPassare = null;
             foreach (Documento doc in biblioteca.docList)
             {
                 if (titolo == doc.title)
                 {
-                    return doc;
+                    documentoDaPassare=doc;
                 }
             }
+            return documentoDaPassare;
         }
 
-        public Documento CercaPerCodice (int codice, Biblioteca biblioteca)
+        public Documento CercaPerCodice (string id, Biblioteca biblioteca)
         {
-
+            Documento documentoDaPassare = null;
+            foreach (Documento doc in biblioteca.docList)
+            {
+                if (id == doc.id)
+                {
+                    documentoDaPassare = doc;
+                }
+            }
+            return documentoDaPassare;
         }
 
 
