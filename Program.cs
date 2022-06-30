@@ -36,6 +36,19 @@ if (scelta == "1")
     Utente newUser = new Utente(mail, pw);
     newBiblio.AddUser(newUser);
     Console.WriteLine("Nuovo utente registrato");
+} else
+{
+    Console.Write("Inserisci mail ");
+    string mail = Console.ReadLine();
+    Console.Write("Inserisci password ");
+    string pw = Console.ReadLine();
+    if (newBiblio.isRegistred(mail,pw))
+    {
+        Console.WriteLine("Sei loggato");
+    } else
+    {
+        Console.WriteLine("Non sei registrato");
+    }
 }
 
 

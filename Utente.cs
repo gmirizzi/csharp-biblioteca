@@ -11,7 +11,7 @@ namespace csharp_biblioteca
         public string surname;
         public string name;
         public string email;
-        private string password;
+        public string password;
         public int number;
 
         public Utente(string email, string password)

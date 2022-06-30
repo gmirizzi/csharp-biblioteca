@@ -34,5 +34,16 @@ namespace csharp_biblioteca
         {
             docList.Add(doc);
         }
+
+        public bool isRegistred (string mail, string pw)
+        {
+            bool registered = false;
+            foreach (Utente user in userList)
+            {
+                if (user.email == mail && user.password == pw)
+                    registered = true;
+            }
+            return registered;
+        }
     }
 }
