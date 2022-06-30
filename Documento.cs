@@ -12,13 +12,12 @@ namespace csharp_biblioteca
         public string title;
         protected int year;
         protected string settore;
-        protected string stato;
+        protected bool available = true;
         protected int scaffale;
         protected Autore author;
 
         public Documento(string title)
         {
-            this.id = this.GenerateID();
             this.title = title;
         }
     }

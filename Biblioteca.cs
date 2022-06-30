@@ -29,5 +29,10 @@ namespace csharp_biblioteca
         {
             userList.Add(user);
         }
+
+        public void AddDoc(Documento doc)
+        {
+            docList.Add(doc);
+        }
     }
 }

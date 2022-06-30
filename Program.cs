@@ -2,6 +2,7 @@
 using csharp_biblioteca;
 
 Biblioteca newBiblio = new Biblioteca();
+//Creare 3 nuovi utenti
 Utente user1 = new Utente("mail@prova.it", "1234");
 user1.name = "Giuseppe";
 user1.surname = "Mirizzi";
@@ -14,5 +15,12 @@ Utente user3 = new Utente("mail@prova.it", "1234");
 user3.name = "Gianluca";
 user3.surname = "Tizio";
 newBiblio.AddUser(user3);
+//Creare 3 nuovi libri
+Libro libro1 = new Libro("Titolo casuale");
+newBiblio.AddDoc(libro1);
+Libro libro2 = new Libro("Titolo random");
+newBiblio.AddDoc(libro2);
+Libro libro3 = new Libro("Titolo bellissimo");
+newBiblio.AddDoc(libro3);
 
 
