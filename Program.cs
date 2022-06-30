@@ -23,4 +23,19 @@ newBiblio.AddDoc(libro2);
 Libro libro3 = new Libro("Titolo bellissimo");
 newBiblio.AddDoc(libro3);
 
+Console.WriteLine("Biblioteca online");
+Console.WriteLine("1. Registrati");
+Console.WriteLine("2. Login");
+string scelta = Console.ReadLine();
+if (scelta == "1")
+{
+    Console.Write("Inserisci mail ");
+    string mail = Console.ReadLine();
+    Console.Write("Inserisci password ");
+    string pw = Console.ReadLine();
+    Utente newUser = new Utente(mail, pw);
+    newBiblio.AddUser(newUser);
+    Console.WriteLine("Nuovo utente registrato");
+}
+
 

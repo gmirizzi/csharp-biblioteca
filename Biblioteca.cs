@@ -8,9 +8,9 @@ namespace csharp_biblioteca
 {
     internal class Biblioteca
     {
-        public List<Utente> userList;
-        public List<Prestito> loanList;
-        public List<Documento> docList;
+        public List<Utente> userList = new List<Utente>();
+        public List<Prestito> loanList = new List<Prestito>();
+        public List<Documento> docList = new List<Documento>();
 
         public List<Prestito> LoanResearch(string name, string surname)
         {
