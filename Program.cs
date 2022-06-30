@@ -5,11 +5,14 @@ Biblioteca newBiblio = new Biblioteca();
 Utente user1 = new Utente("mail@prova.it", "1234");
 user1.name = "Giuseppe";
 user1.surname = "Mirizzi";
+newBiblio.AddUser(user1);
 Utente user2 = new Utente("mail@prova.it", "1234");
 user2.name = "Paolo";
 user2.surname = "Sempronio";
+newBiblio.AddUser(user2);
 Utente user3 = new Utente("mail@prova.it", "1234");
 user3.name = "Gianluca";
 user3.surname = "Tizio";
+newBiblio.AddUser(user3);
 
 

@@ -24,5 +24,10 @@ namespace csharp_biblioteca
             }
             return prestitiCercati;
         }
+
+        public void AddUser (Utente user)
+        {
+            userList.Add(user);
+        }
     }
 }
