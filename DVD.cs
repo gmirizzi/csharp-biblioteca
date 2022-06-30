@@ -8,6 +8,10 @@ namespace csharp_biblioteca
 {
     internal class DVD : Documento
     {
+        public DVD(string title) : base(title)
+        {
+        }
+
         public int Durata { get; set; }
     }
 }

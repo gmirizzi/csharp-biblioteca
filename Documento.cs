@@ -15,5 +15,11 @@ namespace csharp_biblioteca
         protected string stato;
         protected int scaffale;
         protected Autore author;
+
+        public Documento(string title)
+        {
+            this.id = this.GenerateID();
+            this.title = title;
+        }
     }
 }
