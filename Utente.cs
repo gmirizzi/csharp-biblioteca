@@ -44,7 +44,7 @@ namespace csharp_biblioteca
             Documento documentoDaPassare = null;
             foreach (Documento doc in biblioteca.docList)
             {
-                if (id == doc.id)
+                if (id == doc.GetId())
                 {
                     documentoDaPassare = doc;
                 }

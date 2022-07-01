@@ -8,7 +8,7 @@ namespace csharp_biblioteca
 {
     internal class Documento
     {
-        public string id;
+        protected string id;
         public string title;
         protected int year;
         protected string settore;
@@ -16,6 +16,10 @@ namespace csharp_biblioteca
         protected int scaffale;
         protected Autore author;
 
+        public string GetId ()
+        {
+            return id;
+        }
         public Documento(string title)
         {
             this.title = title;
